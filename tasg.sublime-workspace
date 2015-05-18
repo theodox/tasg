@@ -3,15 +3,218 @@
 	{
 		"selected_items":
 		[
+			[
+				"posi",
+				"possibilities"
+			],
+			[
+				"defau",
+				"defaultdict"
+			],
+			[
+				"l",
+				"lambda"
+			],
+			[
+				"de",
+				"defaultdict"
+			],
+			[
+				"be",
+				"behavior"
+			],
+			[
+				"coll",
+				"collision"
+			],
+			[
+				"check",
+				"checkboxes"
+			],
+			[
+				"rig",
+				"Rigidbody"
+			],
+			[
+				"comp",
+				"component"
+			],
+			[
+				"rigi",
+				"rigidBody"
+			],
+			[
+				"riig",
+				"RigidBody"
+			],
+			[
+				"La",
+				"lang"
+			],
+			[
+				"Rig",
+				"RigidBody"
+			],
+			[
+				"Rigid",
+				"RigidBodies"
+			],
+			[
+				"OnC",
+				"OnCollisionStay	Collider.*(?)"
+			],
+			[
+				"_p",
+				"_previous_turn"
+			],
+			[
+				"Coll",
+				"Collision	[class]"
+			],
+			[
+				"_",
+				"_capacity"
+			],
+			[
+				"Ar",
+				"Array	*(?)"
+			],
+			[
+				"onCo",
+				"onCollisionEnter	Rigidbody.*(?)"
+			],
+			[
+				"Unity",
+				"UnityEngine"
+			],
+			[
+				"V",
+				"Vector4	*()"
+			],
+			[
+				"tran",
+				"transform	GameObject.*"
+			],
+			[
+				"pos",
+				"position	Transform.*"
+			],
+			[
+				"jup",
+				"_JumpSpeed"
+			],
+			[
+				"Sp",
+				"Space	KeyCode.*"
+			],
+			[
+				"zer",
+				"zero_pos"
+			],
+			[
+				"Pos",
+				"position"
+			],
+			[
+				"Tra",
+				"Transform	[class]"
+			],
+			[
+				"del",
+				"deltaTime	Touch.*"
+			],
+			[
+				"Lat",
+				"LateUpdate	MonoBehaviour.*()"
+			],
+			[
+				"Vec",
+				"Vector3	SerializedPropertyType.*"
+			],
+			[
+				"frame",
+				"frame_speed"
+			],
+			[
+				"delt",
+				"deltaTime	Time.*"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "@ Effect Fundamentals.md",
+			"file": "TA taxonomy.md",
 			"settings":
 			{
-				"buffer_size": 823,
+				"buffer_size": 1638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/stevet/unity-legos/Assets/unity-legos/NoCollide.boo",
+			"settings":
+			{
+				"buffer_size": 3732,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "This is a great chance to clean up all the cruft in the tree and set the stage for cleaner future stuff.  Here's the key things we want to accomplish\n\n1. A clean, atomic move.  This is pretty much forced on us by the branch transition anyway, but we want to make good use of changelists pre-planning to make this easy to deal with (and to revert if needs be!)\n2. A very neat, clean tree with as few wierd typos and spellings as possible.  Even though naming conventions are lame as a tool platform, they are nice as thing to have. \n3. All maya files become MA and stay that way from now on. That way we can do future changes more programmatically.\n4. A chance to throw out any demo crap we don't want\n5. A chance to prune our non-game assers in the resources folder down as much as possible\n\nTools work\n-----------\n\nKey pieces:\n\n1. A system for creating an old-names to new-names list that we can preview, edit, and share. It has to have human editing but it also has to have spell checking.  (me)\n2. Tools for updating referenced files, ie rigs and animations, so they can be moved cleanly. (jason and Matt)\n3. Tools for moving stingray assets and updating their name references. This may require help from Josh: currently the level assets are referenced in the `.level` file by GUID, not by path, but they are accessed by path in the `.level_editor`. Apparently `.level_editor` is going away. We need to know what has to get updated to either preserve existing references or replace them. (Bryce, leaning on Josh)\n4. Tools for updating maya texture references (Bryce and Jason -- Jason wrote the current workspace manager)\n5. Conversion of all existing MB files to MA. The easy ones can be done with a dumb script, a lot of them won't be easy and will need hand attention (Matt)\n6. Tying it all together, a way to describe a whole move, create all the changelists needed, test it, and commit it (me).\n\n\n",
+			"settings":
+			{
+				"buffer_size": 1905,
+				"line_ending": "Unix",
+				"name": "Tools work"
+			}
+		},
+		{
+			"file": "/Users/stevet/Dropbox/blog/Spelchek.md",
+			"settings":
+			{
+				"buffer_size": 3007,
+				"line_ending": "Unix",
+				"name": "Spelchek"
+			}
+		},
+		{
+			"file": "/Users/stevet/Dropbox/blog/Spelchek.html",
+			"settings":
+			{
+				"buffer_size": 4686,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "	other	1336\n	good	1276\n	new	1154\n	old	648\n	great	635\n	high	574\n	small	518\n	different	484\n	large	471\n	local	445\n	social	422\n	important	392\n	long	392\n	young	379\n	national	376\n	british	357\n	right	354\n	early	353\n	possible	342\n	big	338\n	little	306\n	political	306\n	able	304\n	late	302\n	general	301\n	full	289\n	far	288\n	low	286\n	public	285\n	available	272\n	bad	264\n	main	245\n	sure	241\n	clear	239\n	major	238\n	economic	236\n	only	231\n	likely	228\n	real	227\n	black	226\n	particular	223\n	international	221\n	special	220\n	difficult	220\n	certain	220\n	open	219\n	whole	216\n	white	207\n	free	200\n	short	198\n	easy	198\n	strong	197\n	european	195\n	central	193\n	similar	184\n	human	183\n	true	183\n	common	182\n	necessary	181\n	single	177\n	personal	176\n	hard	176\n	private	173\n	poor	166\n	financial	165\n	wide	165\n	foreign	161\n	simple	159\n	recent	158\n	concerned	158\n	american	157\n	various	155\n	close	154\n	fine	150\n	english	150\n	wrong	149\n	present	148\n	royal	147\n	natural	142\n	individual	136\n	nice	134\n	french	134\n	following	134\n	current	133\n	modern	131\n	labour	131\n	legal	131\n	happy	129\n	final	129\n	red	126\n	normal	124\n	serious	124\n	previous	123\n	total	122\n	prime	121\n	significant	121\n	industrial	116\n	sorry	115\n	dead	114\n	specific	113\n	appropriate	113\n	top	112\n	soviet	109\n	basic	109\n	military	108\n	original	108\n	successful	108\n	aware	108\n	hon	107\n	popular	106\n	heavy	105\n	professional	105\n	direct	104\n	dark	104\n	cold	103\n	ready	102\n	green	101\n	useful	101\n	effective	99\n	western	99\n	traditional	99\n	scottish	98\n	german	98\n	independent	98\n	deep	97\n	interesting	96\n	considerable	96\n	involved	96\n	physical	95\n	left	95\n	hot	94\n	existing	94\n	responsible	94\n	complete	94\n	medical	93\n	blue	92\n	extra	92\n	past	89\n	male	89\n	interested	88\n	fair	87\n	essential	87\n	beautiful	87\n	civil	87\n	primary	86\n	obvious	85\n	future	85\n	environmental	84\n	positive	83\n	senior	82\n	nuclear	81\n	annual	81\n	relevant	79\n	huge	79\n	rich	79\n	commercial	79\n	safe	78\n	regional	78\n	practical	77\n	official	77\n	separate	77\n	key	76\n	chief	75\n	regular	75\n	due	75\n	additional	74\n	active	73\n	powerful	72\n	complex	72\n	standard	72\n	impossible	71\n	light	71\n	warm	70\n	middle	70\n	fresh	69\n	sexual	69\n	front	69\n	domestic	69\n	actual	68\n	united	68\n	technical	68\n	ordinary	68\n	cheap	68\n	strange	68\n	internal	67\n	excellent	67\n	quiet	66\n	soft	66\n	potential	66\n	northern	66\n	religious	66\n	quick	66\n	very	65\n	famous	65\n	cultural	65\n	proper	65\n	broad	65\n	joint	64\n	formal	64\n	limited	64\n	conservative	64\n	lovely	64\n	usual	64\n	ltd	64\n	unable	64\n	rural	63\n	initial	62\n	substantial	62\n	christian	62\n	bright	62\n	average	62\n	leading	61\n	reasonable	61\n	immediate	61\n	suitable	61\n	equal	61\n	detailed	60\n	working	60\n	overall	60\n	female	60\n	afraid	60\n	democratic	59\n	growing	59\n	sufficient	59\n	scientific	59\n	eastern	59\n	correct	59\n	inc	59\n	irish	59\n	expensive	59\n	educational	59\n	mental	58\n	dangerous	58\n	critical	58\n	increased	57\n	familiar	57\n	unlikely	57\n	double	57\n	perfect	56\n	slow	56\n	tiny	56\n	dry	56\n	historical	56\n	thin	56\n	daily	55\n	southern	55\n	increasing	55\n	wild	55\n	alone	54\n	urban	54\n	empty	54\n	married	54\n	narrow	54\n	liberal	54\n	supposed	54\n	upper	54\n	apparent	53\n	tall	53\n	busy	53\n	bloody	53\n	prepared	53\n	russian	52\n	moral	52\n	careful	52\n	clean	52\n	attractive	52\n	japanese	51\n	vital	51\n	thick	51\n	alternative	51\n	fast	50\n	ancient	50\n	elderly	50\n	rare	50\n	external	49\n	capable	49\n	brief	49\n	wonderful	49\n	grand	49\n	typical	49\n	entire	48\n	grey	48\n	constant	47\n	vast	47\n	surprised	47\n	ideal	47\n	terrible	47\n	academic	47\n	funny	47\n	minor	47\n	pleased	47\n	severe	47\n	ill	46\n	corporate	46\n	negative	45\n	permanent	45\n	weak	45\n	brown	45\n	fundamental	45\n	odd	45\n	crucial	45\n	inner	45\n	used	45\n	criminal	44\n	contemporary	44\n	sharp	44\n	sick	44\n	near	44\n	roman	44\n	massive	44\n	unique	43\n	secondary	43\n	parliamentary	43\n	african	43\n	unknown	43\n	subsequent	43\n	angry	43\n	alive	43\n	guilty	42\n	lucky	42\n	enormous	42\n	well	42\n	communist	42\n	yellow	41\n	unusual	41\n	net	41\n	long-term	41\n	tough	41\n	dear	41\n	extensive	41\n	glad	41\n	remaining	41\n	agricultural	41\n	alright	40\n	healthy	40\n	italian	40\n	principal	40\n	tired	40\n	efficient	40\n	comfortable	40\n	chinese	40\n	relative	39\n	friendly	39\n	conventional	39\n	willing	39\n	sudden	39\n	proposed	39\n	voluntary	39\n	slight	39\n	valuable	39\n	dramatic	39\n	golden	39\n	temporary	38\n	federal	38\n	keen	38\n	flat	38\n	silent	38\n	indian	38\n	video-taped	38\n	worried	38\n	pale	38\n	statutory	37\n	welsh	37\n	dependent	37\n	firm	37\n	wet	37\n	competitive	37\n	armed	37\n	radical	37\n	outside	37\n	acceptable	36\n	sensitive	36\n	false	36\n	living	36\n	pure	36\n	global	36\n	emotional	36\n	sad	36\n	secret	36\n	rapid	36\n	adequate	36\n	fixed	36\n	sweet	36\n	administrative	35\n	wooden	35\n	remarkable	35\n	comprehensive	35\n	surprising	35\n	solid	35\n	rough	35\n	mere	35\n	mass	35\n	brilliant	35\n	maximum	35\n	absolute	35\n	tory	34\n	electronic	34\n	visual	34\n	electric	34\n	cool	34\n	spanish	34\n	literary	34\n	continuing	34\n	supreme	33\n	chemical	33\n	genuine	33\n	exciting	33\n	written	33\n	stupid	33\n	advanced	33\n	extreme	33\n	classical	33\n	fit	33\n	favourite	33\n	socialist	33\n	widespread	32\n	confident	32\n	straight	32\n	catholic	32\n	proud	32\n	numerous	32\n	opposite	32\n	distinct	32\n	mad	32\n	helpful	32\n	given	31\n	disabled	31\n	consistent	31\n	anxious	31\n	nervous	31\n	awful	31\n	stable	31\n	constitutional	31\n	satisfied	31\n	conscious	31\n	developing	31\n	strategic	30\n	holy	30\n	smooth	30\n	dominant	30\n	remote	30\n	theoretical	30\n	outstanding	30\n	pink	30\n	pretty	30\n	clinical	30\n	minimum	30\n	honest	30\n	impressive	30\n	related	30\n	residential	29\n	extraordinary	29\n	plain	29\n	visible	29\n	accurate	29\n	distant	29\n	still	29\n	greek	29\n	complicated	29\n	musical	29\n	precise	29\n	gentle	29\n	broken	29\n	live	29\n	silly	29\n	fat	28\n	tight	28\n	monetary	28\n	round	28\n	psychological	28\n	violent	28\n	unemployed	28\n	inevitable	28\n	junior	28\n	sensible	28\n	grateful	27\n	pleasant	27\n	dirty	27\n	structural	27\n	welcome	27\n	so-called	27\n	deaf	27\n	above	27\n	continuous	26\n	blind	26\n	overseas	26\n	mean	26\n	entitled	26\n	delighted	26\n	loose	26\n	occasional	26\n	evident	26\n	desperate	26\n	fellow	26\n	universal	26\n	square	26\n	steady	26\n	classic	26\n	equivalent	25\n	intellectual	25\n	victorian	25\n	level	25\n	ultimate	25\n	creative	25\n	lost	25\n	medieval	25\n	clever	25\n	linguistic	25\n	convinced	25\n	judicial	25\n	raw	25\n	sophisticated	25\n	asleep	25\n	vulnerable	25\n	illegal	24\n	outer	24\n	revolutionary	24\n	bitter	24\n	changing	24\n	australian	24\n	native	24\n	imperial	24\n	strict	24\n	wise	24\n	informal	24\n	flexible	24\n	collective	24\n	frequent	24\n	experimental	24\n	spiritual	23\n	intense	23\n	rational	23\n	ethnic	23\n	generous	23\n	inadequate	23\n	prominent	23\n	logical	23\n	bare	23\n	historic	23\n	modest	23\n	dutch	23\n	acute	23\n	electrical	23\n	valid	23\n	weekly	23\n	gross	23\n	automatic	23\n	loud	23\n	reliable	22\n	mutual	22\n	liable	22\n	multiple	22\n	ruling	22\n	curious	22\n	arab	22\n	sole	22\n	jewish	22\n	managing	22\n	pregnant	22\n	latin	22\n	nearby	22\n	exact	22\n	underlying	22\n	identical	22\n	satisfactory	22\n	marginal	22\n	distinctive	22\n	electoral	22\n	urgent	22\n	presidential	21\n	controversial	21\n	oral	21\n	everyday	21\n	encouraging	21\n	organic	21\n	continued	21\n	expected	21\n	statistical	21\n	desirable	21\n	innocent	21\n	improved	21\n	exclusive	21\n	marked	21\n	experienced	21\n	unexpected	21\n	superb	21\n	sheer	21\n	disappointed	21\n	frightened	21\n	full-time	21\n	gastric	21\n	capitalist	21\n	romantic	21\n	naked	20\n	reluctant	20\n	magnificent	20\n	convenient	20\n	established	20\n	closed	20\n	uncertain	20\n	artificial	20\n	diplomatic	20\n	tremendous	20\n	marine	20\n	mechanical	20\n	retail	20\n	institutional	20\n	mixed	20\n	required	20\n	biological	20\n	known	20\n	functional	20\n	straightforward	20\n	superior	20\n	digital	20\n	part-time	20\n	spectacular	19\n	unhappy	19\n	confused	19\n	unfair	19\n	aggressive	19\n	spare	19\n	painful	19\n	abstract	19\n	asian	19\n	associated	19\n	legislative	19\n	monthly	19\n	intelligent	19\n	hungry	19\n	explicit	19\n	nasty	19\n	just	19\n	faint	19\n	colored	19\n	ridiculous	19\n	amazing	19\n	comparable	19\n	successive	19\n	working-class	19\n	realistic	19\n	back	19\n	decent	19\n	unnecessary	19\n	flying	19\n	fucking	18\n	random	18\n	influential	18\n	dull	18\n	genetic	18\n	neat	18\n	marvellous	18\n	crazy	18\n	damp	18\n	giant	18\n	secure	18\n	bottom	18\n	skilled	18\n	subtle	18\n	elegant	18\n	brave	18\n	lesser	18\n	parallel	18\n	steep	18\n	intensive	18\n	casual	18\n	tropical	18\n	lonely	18\n	partial	18\n	preliminary	18\n	concrete	18\n	alleged	18\n	assistant	18\n	vertical	18\n	upset	18\n	delicate	18\n	mild	18\n	occupational	17\n	excessive	17\n	progressive	17\n	iraqi	17\n	exceptional	17\n	integrated	17\n	striking	17\n	continental	17\n	okay	17\n	harsh	17\n	combined	17\n	fierce	17\n	handsome	17\n	characteristic	17\n	chronic	17\n	compulsory	17\n	interim	17\n	objective	17\n	splendid	17\n	magic	17\n	short-term	17\n	systematic	17\n	obliged	17\n	payable	17\n	fun	17\n	horrible	17\n	primitive	17\n	fascinating	17\n	ideological	17\n	metropolitan	17\n	surrounding	17\n	estimated	17\n	peaceful	17\n	premier	17\n	operational	17\n	technological	16\n	kind	16\n	advisory	16\n	hostile	16\n	precious	16\n	gay	16\n	accessible	16\n	determined	16\n	excited	16\n	impressed	16\n	provincial	16\n	smart	16\n	endless	16\n	isolated	16\n	post-war	16\n	drunk	16\n	geographical	16\n	like	16\n	dynamic	16\n	boring	16\n	forthcoming	16\n	unfortunate	16\n	definite	16\n	super	16\n	notable	16\n	indirect	16\n	stiff	16\n	wealthy	16\n	awkward	16\n	lively	16\n	neutral	16\n	artistic	16\n	content	16\n	mature	16\n	colonial	15\n	ambitious	15\n	evil	15\n	magnetic	15\n	verbal	15\n	legitimate	15\n	sympathetic	15\n	well-known	15\n	empirical	15\n	head	15\n	shallow	15\n	vague	15\n	naval	15\n	depressed	15\n	shared	15\n	added	15\n	shocked	15\n	mid	15\n	worthwhile	15\n	qualified	15\n	missing	15\n	blank	15\n	absent	15\n	favourable	15\n	polish	15\n	israeli	15\n	developed	15\n	profound	15\n	representative	15\n	enthusiastic	14\n	dreadful	14\n	rigid	14\n	reduced	14\n	cruel	14\n	coastal	14\n	peculiar	14\n	racial	14\n	ugly	14\n	swiss	14\n	crude	14\n	extended	14\n	selected	14\n	eager	14\n	feminist	14\n	canadian	14\n	bold	14\n	relaxed	14\n	corresponding	14\n	running	14\n	planned	14\n	applicable	14\n	immense	14\n	allied	14\n	comparative	14\n	uncomfortable	14\n	conservation	14\n	productive	14\n	beneficial	14\n	bored	14\n	charming	14\n	minimal	14\n	mobile	14\n	turkish	14\n	orange	14\n	rear	14\n	passive	14\n	suspicious	14\n	overwhelming	14\n	fatal	14\n	resulting	14\n	symbolic	14\n	registered	14\n	neighbouring	14\n	calm	14\n	irrelevant	14\n	patient	14\n	compact	14\n	profitable	14\n	rival	14\n	loyal	14\n	moderate	14\n	distinguished	13\n	interior	13\n	noble	13\n	insufficient	13\n	eligible	13\n	mysterious	13\n	varying	13\n	middle-class	13\n	managerial	13\n	molecular	13\n	olympic	13\n	linear	13\n	prospective	13\n	printed	13\n	parental	13\n	diverse	13\n	elaborate	13\n	furious	13\n	fiscal	13\n	burning	13\n	useless	13\n	semantic	13\n	embarrassed	13\n	inherent	13\n	philosophical	13\n	deliberate	13\n	awake	13\n	variable	13\n	promising	13\n	unpleasant	13\n	varied	13\n	sacred	13\n	selective	13\n	inclined	13\n	tender	13\n	hidden	13\n	worthy	13\n	intermediate	13\n	sound	13\n	protective	13\n	fortunate	13\n	slim	13\n	islamic	13\n	defensive	13\n	divine	13\n	stuck	13\n	driving	13\n	invisible	13\n	misleading	13\n	circular	13\n	mathematical	13\n	inappropriate	13\n	liquid	13\n	persistent	13\n	solar	13\n	doubtful	13\n	manual	12\n	architectural	12\n	intact	12\n	incredible	12\n	devoted	12\n	prior	12\n	tragic	12\n	respectable	12\n	optimistic	12\n	convincing	12\n	unacceptable	12\n	decisive	12\n	competent	12\n	spatial	12\n	respective	12\n	binding	12\n	relieved	12\n	nursing	12\n	toxic	12\n	select	12\n	redundant	12\n	integral	12\n	then	12\n	probable	12\n	amateur	12\n	fond	12\n	passing	12\n	specified	12\n	territorial	12\n	horizontal	12\n	old-fashioned	12\n	inland	12\n	cognitive	12\n	regulatory	12\n	miserable	12\n	resident	12\n	polite	12\n	scared	12\n	marxist	12\n	gothic	12\n	civilian	12\n	instant	12\n	lengthy	12\n	adverse	12\n	korean	12\n	unconscious	12\n	anonymous	12\n	aesthetic	12\n	orthodox	12\n	static	12\n	unaware	12\n	costly	12\n	fantastic	12\n	foolish	12\n	fashionable	12\n	causal	12\n	compatible	12\n	wee	12\n	implicit	12\n	dual	12\n	ok	12\n	cheerful	12\n	subjective	12\n	forward	12\n	surviving	12\n	exotic	11\n	purple	11\n	cautious	11\n	visiting	11\n	aggregate	11\n	ethical	11\n	protestant	11\n	teenage	11\n	large-scale	11\n	dying	11\n	disastrous	11\n	delicious	11\n	confidential	11\n	underground	11\n	thorough	11\n	grim	11\n	autonomous	11\n	atomic	11\n	frozen	11\n	colorful	11\n	injured	11\n	uniform	11\n	ashamed	11\n	glorious	11\n	wicked	11\n	coherent	11\n	rising	11\n	shy	11\n	novel	11\n	balanced	11\n	delightful	11\n	arbitrary	11\n	adjacent	11\n	psychiatric	11\n	worrying	11\n	weird	11\n	unchanged	11\n	rolling	11\n	evolutionary	11\n	intimate	11\n	sporting	11\n	disciplinary	11\n	formidable	11\n	lexical	11\n	noisy	11\n	gradual	11\n	accused	11\n	homeless	11\n	supporting	11\n	coming	11\n	renewed	11\n	excess	11\n	retired	11\n	rubber	11\n	chosen	11\n	outdoor	11\n	embarrassing	11\n	preferred	11\n	bizarre	11\n	appalling	11\n	agreed	10\n	imaginative	10\n	governing	10\n	accepted	10\n	vocational	10\n	palestinian	10\n	mighty	10\n	puzzled	10\n	worldwide	10\n	handicapped	10\n	organisational	10\n	sunny	10\n	eldest	10\n	eventual	10\n	spontaneous	10\n	vivid	10\n	rude	10\n	nineteenth-century	10\n	faithful	10\n	ministerial	10\n	innovative	10\n	controlled	10\n	conceptual	10\n	unwilling	10\n	civic	10\n	meaningful	10\n	disturbing	10\n		time	1833\n	year	1639\n	people	1256\n	way	1108\n	man	1003\n	day	940\n	thing	776\n	child	710\n	Mr	673\n	government	670\n	work	653\n	life	645\n	woman	631\n	system	619\n	case	613\n	part	612\n	group	607\n	number	606\n	world	600\n	house	598\n	area	585\n	company	579\n	problem	565\n	service	549\n	place	534\n	hand	532\n	party	529\n	school	529\n	country	486\n	point	484\n	week	476\n	member	471\n	end	458\n	state	440\n	word	438\n	family	428\n	fact	426\n	head	402\n	month	398\n	side	398\n	business	394\n	night	393\n	eye	392\n	home	390\n	question	390\n	information	387\n	power	385\n	change	384\n	per_cent	384\n	interest	376\n	development	375\n	money	375\n	book	374\n	water	372\n	other	367\n	form	365\n	room	364\n	level	360\n	car	353\n	council	348\n	policy	348\n	market	346\n	court	344\n	effect	336\n	result	334\n	idea	328\n	use	328\n	study	327\n	name	326\n	job	326\n	body	325\n	report	325\n	line	323\n	law	318\n	face	315\n	friend	315\n	authority	313\n	road	313\n	minister	305\n	rate	303\n	hour	302\n	door	302\n	office	300\n	right	299\n	war	297\n	mother	295\n	person	290\n	reason	289\n	view	289\n	term	288\n	period	283\n	center	282\n	society	282\n	figure	282\n	police	278\n	city	275\n	need	273\n	million	272\n	community	272\n	kind	271\n	price	271\n	control	270\n	process	269\n	action	269\n	issue	269\n	cost	269\n	position	268\n	course	267\n	minute	266\n	education	260\n	type	259\n	research	258\n	subject	256\n	programme	255\n	girl	254\n	moment	254\n	father	252\n	age	252\n	value	250\n	force	250\n	order	250\n	matter	248\n	act	248\n	health	246\n	lot	246\n	decision	243\n	street	243\n	patient	242\n	industry	242\n	mind	241\n	class	241\n	church	238\n	condition	237\n	paper	237\n	bank	234\n	century	233\n	section	232\n	hundred	231\n	activity	231\n	table	231\n	death	230\n	building	229\n	sort	229\n	sense	229\n	staff	228\n	team	226\n	experience	223\n	student	222\n	Mrs	221\n	language	221\n	town	221\n	plan	220\n	department	219\n	morning	219\n	management	219\n	product	217\n	committee	217\n	practice	216\n	ground	215\n	meeting	215\n	evidence	215\n	letter	215\n	foot	214\n	boy	213\n	game	212\n	back	212\n	union	211\n	food	211\n	role	210\n	event	208\n	land	208\n	art	206\n	support	204\n	voice	203\n	stage	203\n	teacher	203\n	range	203\n	trade	203\n	club	202\n	arm	202\n	field	201\n	history	201\n	parent	201\n	account	200\n	material	199\n	situation	198\n	care	198\n	record	197\n	manager	197\n	project	197\n	example	196\n	training	194\n	window	194\n	light	191\n	difference	191\n	university	191\n	air	191\n	wife	190\n	sir	189\n	relationship	189\n	quality	188\n	rule	187\n	tax	184\n	story	184\n	pound	184\n	worker	184\n	model	183\n	data	183\n	nature	182\n	officer	181\n	structure	181\n	method	180\n	hospital	180\n	bed	180\n	unit	180\n	movement	179\n	detail	178\n	date	177\n	wall	175\n	computer	174\n	approach	171\n	bit	171\n	amount	171\n	award	170\n	scheme	170\n	president	170\n	chapter	169\n	theory	168\n	property	167\n	son	166\n	director	165\n	leader	165\n	south	165\n	firm	163\n	application	163\n	north	163\n	king	162\n	Secretary	162\n	board	162\n	production	162\n	operation	161\n	share	161\n	chance	161\n	opportunity	161\n	lord	160\n	agreement	160\n	picture	159\n	test	159\n	contract	159\n	thousand	158\n	security	158\n	source	157\n	election	157\n	future	156\n	color	156\n	site	155\n	shop	154\n	loss	154\n	animal	153\n	evening	153\n	heart	152\n	standard	152\n	purpose	152\n	benefit	152\n	page	151\n	music	150\n	hair	150\n	doctor	150\n	love	150\n	factor	150\n	pattern	149\n	charge	149\n	piece	148\n	design	148\n	tree	147\n	population	147\n	plant	146\n	performance	146\n	pressure	146\n	knowledge	146\n	news	145\n	fire	145\n	basis	145\n	environment	144\n	garden	144\n	size	144\n	series	144\n	success	143\n	rest	143\n	analysis	143\n	thought	142\n	region	141\n	relation	140\n	set	140\n	statement	140\n	space	140\n	list	140\n	attention	140\n	labour	139\n	demand	139\n	step	139\n	principle	139\n	Sea	139\n	player	138\n	couple	138\n	hotel	138\n	choice	138\n	capital	138\n	station	137\n	village	137\n	film	136\n	association	135\n	attempt	135\n	income	135\n	individual	135\n	feature	135\n	cup	134\n	organisation	134\n	effort	134\n	technology	133\n	machine	132\n	difficulty	132\n	cell	131\n	energy	131\n	treatment	131\n	degree	131\n	growth	131\n	lady	130\n	mile	130\n	top	129\n	risk	129\n	task	129\n	function	129\n	provision	129\n	county	129\n	sound	129\n	behaviour	128\n	east	128\n	defence	128\n	resource	128\n	floor	127\n	west	127\n	science	127\n	style	127\n	college	126\n	horse	126\n	response	126\n	skill	126\n	hall	126\n	feeling	126\n	user	125\n	character	125\n	army	124\n	dog	124\n	investment	124\n	Dr	124\n	look	124\n	answer	124\n	economy	124\n	brother	123\n	husband	123\n	argument	122\n	responsibility	122\n	season	122\n	concern	121\n	bill	121\n	glass	120\n	element	120\n	duty	119\n	increase	119\n	claim	118\n	leg	118\n	title	118\n	park	118\n	fund	118\n	one	118\n	note	117\n	discussion	116\n	chairman	116\n	aspect	116\n	summer	116\n	sun	115\n	daughter	115\n	baby	115\n	institution	114\n	box	114\n	customer	114\n	River	114\n	profit	113\n	conference	112\n	stone	112\n	division	112\n	measure	112\n	procedure	111\n	post	111\n	proposal	111\n	commission	111\n	image	110\n	help	110\n	sector	110\n	oil	110\n	circumstance	110\n	client	110\n	direction	109\n	seat	109\n	attack	109\n	attitude	108\n	disease	107\n	employment	107\n	goal	107\n	sign	106\n	appeal	106\n	affair	106\n	technique	105\n	show	105\n	campaign	105\n	item	105\n	medium	105\n	holiday	105\n	version	105\n	ability	105\n	fish	105\n	pupil	105\n	advice	104\n	press	104\n	sales	104\n	library	104\n	drug	104\n	visit	104\n	surface	103\n	advantage	103\n	memory	102\n	variety	102\n	return	102\n	culture	102\n	Island	102\n	blood	102\n	television	102\n	majority	101\n	speaker	101\n	goods	101\n	competition	101\n	talk	101\n	parliament	101\n	bar	101\n	extent	101\n	no	100\n	access	100\n	star	100\n	text	100\n	deal	100\n	mouth	99\n	trouble	99\n	payment	99\n	cause	99\n	reference	98\n	context	98\n	second	98\n	survey	98\n	facility	98\n	object	97\n	chair	97\n	importance	97\n	article	97\n	earth	97\n	card	96\n	collection	96\n	planning	96\n	public	96\n	species	96\n	communication	96\n	agency	96\n	means	96\n	possibility	96\n	sister	95\n	document	95\n	supply	95\n	budget	94\n	solution	94\n	influence	94\n	software	94\n	weight	94\n	career	94\n	organization	93\n	fear	93\n	opinion	93\n	damage	93\n	rock	93\n	requirement	93\n	district	93\n	bird	93\n	quarter	92\n	stock	92\n	exchange	92\n	opposition	92\n	miss	92\n	edge	92\n	option	92\n	whole	92\n	call	92\n	network	91\n	railway	91\n	occasion	91\n	aid	91\n	match	91\n	executive	91\n	concept	91\n	radio	91\n	target	91\n	arrangement	91\n	lack	90\n	corner	90\n	race	90\n	forest	90\n	sex	90\n	mum	90\n	finger	90\n	equipment	89\n	ball	89\n	crime	89\n	message	89\n	afternoon	89\n	employee	89\n	review	89\n	scale	89\n	strategy	89\n	scene	89\n	peace	89\n	kitchen	89\n	sport	89\n	speech	89\n	partner	88\n	christmas	88\n	tea	88\n	failure	88\n	shoulder	88\n	Hill	88\n	band	88\n	reader	88\n	expression	88\n	sale	88\n	status	88\n	owner	87\n	trust	87\n	truth	87\n	turn	87\n	marriage	87\n	base	86\n	farm	86\n	sentence	86\n	past	86\n	start	86\n	safety	86\n	file	86\n	trial	86\n	newspaper	86\n	league	85\n	balance	85\n	copy	85\n	wind	85\n	nation	85\n	branch	85\n	length	85\n	front	84\n	doubt	84\n	train	84\n	move	84\n	pain	84\n	studio	84\n	accident	84\n	spirit	84\n	official	83\n	contact	83\n	strength	83\n	transport	82\n	works	82\n	gas	82\n	contribution	82\n	museum	82\n	cash	82\n	reform	82\n	shape	82\n	debate	82\n	pair	81\n	protection	81\n	english	81\n	artist	81\n	presence	81\n	agent	81\n	rise	81\n	meaning	80\n	master	80\n	hope	80\n	driver	80\n	candidate	80\n	vote	80\n	queen	80\n	play	79\n	exercise	79\n	adult	79\n	consequence	79\n	proportion	78\n	speed	78\n	assessment	78\n	consideration	78\n	fig	78\n	beginning	78\n	route	78\n	understanding	77\n	impact	77\n	credit	77\n	track	76\n	danger	76\n	progress	76\n	reaction	76\n	path	76\n	half	76\n	video	76\n	flower	76\n	distance	75\n	skin	75\n	belief	75\n	comment	75\n	content	75\n	bag	75\n	conclusion	75\n	aim	75\n	link	75\n	justice	75\n	gold	75\n	politics	75\n	dad	74\n	estate	74\n	sight	74\n	winter	74\n	boat	74\n	prison	74\n	wine	74\n	reality	74\n	weekend	73\n	writer	73\n	clothes	73\n	vehicle	73\n	debt	73\n	objective	73\n	offer	73\n	employer	73\n	colleague	72\n	battle	72\n	hole	72\n	expert	72\n	farmer	72\n	package	72\n	injury	72\n	telephone	72\n	sample	71\n	key	71\n	painting	71\n	insurance	71\n	confidence	71\n	phone	71\n	generation	71\n	threat	70\n	judge	70\n	conflict	70\n	ship	70\n	visitor	70\n	drink	70\n	commitment	70\n	legislation	70\n	volume	70\n	smile	69\n	entry	69\n	yard	69\n	stuff	69\n	introduction	69\n	background	69\n	cabinet	69\n	engine	69\n	administration	69\n	victim	69\n	author	69\n	manner	69\n	bus	68\n	song	68\n	investigation	68\n	relief	68\n	wage	68\n	row	68\n	regulation	68\n	Mountain	68\n	coffee	68\n	tradition	67\n	tour	67\n	football	67\n	interview	67\n	wood	67\n	exhibition	67\n	category	67\n	traffic	67\n	dinner	67\n	consumer	67\n	meal	67\n	construction	66\n	bridge	66\n	gentleman	66\n	description	66\n	tv	66\n	lip	66\n	housing	66\n	improvement	66\n	existence	66\n	appearance	66\n	flat	66\n	discipline	66\n	sheet	66\n	session	66\n	contrast	66\n	distribution	66\n	loan	65\n	representative	65\n	conversation	65\n	prince	65\n	audience	65\n	crisis	65\n	theater	65\n	code	65\n	respect	64\n	unemployment	64\n	freedom	64\n	plate	64\n	magazine	64\n	explanation	64\n	flight	64\n	rain	64\n	pension	64\n	asset	64\n	writing	64\n	limit	64\n	youth	63\n	dream	63\n	challenge	63\n	while	63\n	spring	63\n	capacity	63\n	factory	63\n	victory	63\n	selection	63\n	finance	63\n	intention	62\n	examination	62\n	egg	62\n	thanks	62\n	aircraft	62\n	decade	62\n	output	62\n	mark	62\n	notice	62\n	definition	62\n	reduction	61\n	will	61\n	offence	61\n	tape	60\n	run	60\n	address	60\n	neck	60\n	murder	60\n	bottom	60\n	appointment	60\n	concentration	60\n	kid	60\n	bedroom	60\n	enterprise	60\n	middle	60\n	weapon	60\n	error	59\n	absence	59\n	birth	59\n	bottle	59\n	criticism	59\n	acid	59\n	transfer	59\n	module	59\n	assembly	59\n	ear	59\n	instruction	59\n	teaching	59\n	settlement	59\n	store	59\n	wave	59\n	pleasure	58\n	implication	58\n	channel	58\n	lead	58\n	grant	58\n	temperature	58\n	cut	58\n	recognition	58\n	fee	58\n	republic	58\n	waste	58\n	solicitor	58\n	desire	58\n	weather	58\n	component	58\n	lunch	58\n	institute	58\n	photograph	58\n	expenditure	57\n	silence	57\n	household	57\n	block	57\n	brain	57\n	publication	57\n	program	57\n	guest	57\n	treaty	57\n	nurse	57\n	screen	57\n	guide	57\n	experiment	57\n	map	56\n	sequence	56\n	crowd	56\n	captain	56\n	metal	56\n	trip	56\n	pool	56\n	phase	56\n	sky	56\n	cover	56\n	connection	56\n	violence	56\n	scientist	56\n	sum	56\n	search	56\n	noise	56\n	assumption	56\n	curriculum	56\n	congress	56\n	initiative	56\n	journey	56\n	ministry	55\n	cat	55\n	heat	55\n	instrument	55\n	location	55\n	display	55\n	gate	55\n	theme	55\n	gun	55\n	gallery	55\n	reading	55\n	professor	55\n	emphasis	55\n	learning	54\n	opening	54\n	interpretation	54\n	combination	54\n	tooth	54\n	hell	54\n	prospect	54\n	priority	54\n	tool	54\n	drive	54\n	troop	54\n	faith	54\n	soldier	54\n	spot	54\n	lane	53\n	crown	53\n	coal	53\n	castle	53\n	membership	53\n	revenue	53\n	flow	53\n	mistake	53\n	total	53\n	breath	53\n	release	53\n	motion	53\n	corp	53\n	variation	53\n	literature	53\n	wing	53\n	alternative	53\n	criterion	52\n	ring	52\n	incident	52\n	index	52\n	suggestion	52\n	winner	52\n	border	52\n	pocket	52\n	valley	52\n	passage	52\n	religion	51\n	leaf	51\n	square	51\n	pub	51\n	surprise	51\n	characteristic	51\n	Lake	51\n	fruit	51\n	request	51\n	restaurant	51\n	foundation	51\n	tone	51\n	engineering	51\n	device	51\n	billion	51\n	walk	51\n	specialist	51\n	deputy	51\n	representation	51\n	observation	50\n	shot	50\n	circle	50\n	present	50\n	fall	50\n	strike	50\n	creation	50\n	chain	50\n	marketing	49\n	god	49\n	mechanism	49\n	impression	49\n	clause	49\n	coast	49\n	atmosphere	49\n	neighbour	49\n	revolution	49\n	defendant	49\n	mass	49\n	fashion	49\n	championship	49\n	distinction	49\n	enemy	49\n	leadership	49\n	desk	49\n	panel	49\n	tear	49\n	dress	48\n	negotiation	48\n	establishment	48\n	liability	48\n	iron	48\n	roof	48\n	welfare	48\n	fan	48\n	advance	48\n	milk	48\n	drawing	48\n	ticket	48\n	motor	48\n	soil	48\n	shoe	48\n	engineer	48\n	beach	48\n	nose	48\n	tank	48\n	servant	48\n	potential	48\n	origin	48\n	vision	47\n	palace	47\n	height	47\n	expense	47\n	trend	47\n	editor	47\n	general	47\n	warning	47\n	chief	47\n	significance	47\n	cancer	47\n	citizen	47\n	convention	47\n	bone	47\n	fuel	47\n	round	47\n	champion	47\n	gift	47\n	prisoner	47\n	cross	46\n	living	46\n	achievement	46\n	signal	46\n	outcome	46\n	mp	46\n	knee	46\n	rail	46\n	comparison	46\n	notion	46\n	expectation	46\n	lawyer	46\n	lesson	46\n	democracy	46\n	working	46\n	co	46\n	diet	46\n	being	46\n	parish	46\n	passenger	45\n	root	45\n	manufacturer	45\n	complaint	45\n	shadow	45\n	territory	45\n	touch	45\n	tenant	45\n	plastic	45\n	councillor	45\n	m	45\n	inflation	45\n	gap	45\n	plane	45\n	corporation	45\n	breakfast	45\n	shock	45\n	pay	45\n	score	45\n	grass	45\n	independence	45\n	charity	45\n	column	45\n	finding	45\n	beauty	44\n	boundary	44\n	database	44\n	ref	44\n	formation	44\n	supporter	44\n	accommodation	44\n	transaction	44\n	politician	44\n	male	44\n	exception	44\n	struggle	44\n	resident	44\n	identity	44\n	inquiry	44\n	licence	44\n	topic	44\n	resolution	44\n	buyer	44\n	dispute	44\n	assistance	43\n	novel	43\n	preparation	43\n	proceeding	43\n	metre	43\n	phrase	43\n	mirror	43\n	camp	43\n	emergency	43\n	currency	43\n	break	43\n	thinking	43\n	tension	43\n	quantity	43\n	taste	43\n	fault	43\n	minority	43\n	pilot	43\n	unix	42\n	tower	42\n	involvement	42\n	stress	42\n	spokesman	42\n	coat	42\n	premise	42\n	prize	42\n	manufacturing	42\n	extension	42\n	constitution	42\n	partnership	42\n	pollution	42\n	gene	42\n	mill	42\n	wheel	41\n	string	41\n	depth	41\n	delivery	41\n	obligation	41\n	regime	41\n	decline	41\n	framework	41\n	protein	41\n	frame	41\n	command	41\n	inch	41\n	female	41\n	holder	41\n	german	41\n	advertising	41\n	saving	41\n	poem	41\n	ice	41\n	port	41\n	rose	41\n	boot	41\n	approval	40\n	boss	40\n	load	40\n	setting	40\n	bishop	40\n	cottage	40\n	cycle	40\n	governor	40\n	stairs	40\n	crew	40\n	maintenance	40\n	chest	40\n	travel	40\n	protest	40\n	restriction	40\n	hat	40\n	profession	40\n	mode	40\n	export	40\n	funding	40\n	recommendation	40\n	input	39\n	habit	39\n	sleep	39\n	guard	39\n	reputation	39\n	countryside	39\n	creature	39\n	suit	39\n	autumn	39\n	poll	39\n	focus	39\n	landscape	39\n	green	39\n	bomb	39\n	recession	39\n	recovery	39\n	plaintiff	39\n	layer	39\n	trading	39\n	agriculture	39\n	purchase	39\n	average	39\n	empire	39\n	shareholder	39\n	camera	39\n	silver	39\n	inspector	39\n	critic	39\n	judgment	38\n	wealth	38\n	presentation	38\n	muscle	38\n	soul	38\n	arrival	38\n	penalty	38\n	electricity	38\n	illness	38\n	self	38\n	bread	38\n	resistance	38\n	cake	38\n	perspective	38\n	meat	38\n	beer	38\n	peak	38\n	efficiency	38\n	sugar	38\n	steel	38\n	uncle	38\n	drama	38\n	laboratory	38\n	promotion	37\n	chancellor	37\n	lifespan	37\n	certificate	37\n	possession	37\n	custom	37\n	coach	37\n	philosophy	37\n	zone	37\n	cloud	37\n	angle	37\n	symptom	37\n	alliance	37\n	dollar	37\n	mood	37\n	abuse	37\n	variable	37\n	pc	37\n	bay	37\n	ratio	37\n	spending	37\n	personality	37\n	bid	37\n	expansion	37\n	producer	37\n	actor	36\n	wedding	36\n	bond	36\n	tendency	36\n	final	36\n	estimate	36\n	shirt	36\n	chip	36\n	deposit	36\n	chamber	36\n	cigarette	36\n	researcher	36\n	intervention	36\n	qualification	36\n	reply	36\n	guy	36\n	core	36\n	frequency	36\n	gain	36\n	rent	36\n	honour	36\n	dozen	36\n	relative	36\n	jacket	36\n	awareness	36\n	secret	36\n	festival	36\n	phenomenon	36\n	furniture	35\n	intelligence	35\n	recording	35\n	investor	35\n	dealer	35\n	mixture	35\n	co-operation	35\n	cheek	35\n	equation	35\n	substance	35\n	duke	35\n	discovery	35\n	dance	35\n	throat	35\n	routine	35\n	apple	35\n	tourist	35\n	landlord	35\n	instance	35\n	retirement	35\n	lad	35\n	american	35\n	french	35\n	breach	35\n	emotion	35\n	pipe	35\n	promise	35\n	scope	34\n	birthday	34\n	left	34\n	pace	34\n	golf	34\n	sand	34\n	enquiry	34\n	infection	34\n	fun	34\n	mortgage	34\n	consent	34\n	guitar	34\n	entrance	34\n	hero	34\n	curtain	34\n	darkness	34\n	allowance	34\n	hearing	34\n	disk	34\n	medicine	34\n	paragraph	34\n	rank	34\n	shift	34\n	judgement	34\n	journal	34\n	permission	34\n	dna	34\n	anger	34\n	interaction	34\n	fight	34\n	tale	34\n	witness	34\n	stream	34\n	cricket	34\n	platform	34\n	policeman	34\n	disaster	34\n	carpet	34\n	knife	34\n	print	34\n	mail	34\n	curve	34\n	reserve	34\n	delay	33\n	province	33\n	peasant	33\n	perception	33\n	cream	33\n	airport	33\n	personnel	33\n	defeat	33\n	bath	33\n	acquisition	33\n	salt	33\n	clock	33\n	demonstration	33\n	sake	33\n	aunt	33\n	chemical	33\n	human	33\n	host	33\n	adviser	33\n	joke	33\n	edition	33\n	priest	33\n	circuit	33\n	consumption	33\n	pack	32\n	formula	32\n	count	32\n	journalist	32\n	guidance	32\n	workshop	32\n	tail	32\n	compensation	32\n	seed	32\n	statistics	32\n	earnings	32\n	fishing	32\n	mission	32\n	survival	32\n	tie	32\n	luck	32\n	occupation	32\n	percentage	32\n	consultant	32\n	lecture	32\n	watch	32\n	anxiety	32\n	remark	32\n	supplier	32\n	poet	32\n	net	31\n	preference	31\n	stomach	31\n	ownership	31\n	indication	31\n	tip	31\n	prayer	31\n	poverty	31\n	mine	31\n	observer	31\n	dark	31\n	fortune	31\n	opponent	31\n	crop	31\n	practitioner	31\n	symbol	31\n	hold	31\n	moon	31\n	alcohol	31\n	snow	31\n	climate	31\n	measurement	31\n	heaven	31\n	operating	31\n	conservative	31\n	barrier	31\n	smell	31\n	pitch	31\n	catalogue	30\n	princess	30\n	sheep	30\n	enthusiasm	30\n	operator	30\n	summary	30\n	interval	30\n	implementation	30\n	wish	30\n	evaluation	30\n	architecture	30\n	processing	30\n	burden	30\n	confusion	30\n	publisher	30\n	professional	30\n	democrat	30\n	historian	30\n	schedule	30\n	cheese	30\n	dimension	30\n	talent	30\n	tube	30\n	storage	30\n	bowl	30\n	satisfaction	30\n	dish	30\n	shell	30\n	conduct	29\n	vessel	29\n	breast	29\n	lover	29\n	tunnel	29\n	poetry	29\n	replacement	29\n	turnover	29\n	salary	29\n	percent	29\n	wire	29\n	proof	29\n	pot	29\n	drop	29\n	consultation	29\n	win	29\n	import	29\n	admission	29\n	determination	29\n	strain	29\n	tissue	29\n	label	29\n	leisure	29\n	economics	29\n	cheque	29\n	merchant	29\n	squad	29\n	stake	29\n	smoke	29\n	unity	29\n	designer	29\n	shopping	29\n	fabric	29\n	steam	29\n	rugby	29\n	childhood	29\n	comfort	28\n	magistrate	28\n	bathroom	28\n	movie	28\n	participant	28\n	corridor	28\n	profile	28\n	complex	28\n	lift	28\n	surgery	28\n	conviction	28\n	tongue	28\n	addition	28\n	tennis	28\n	reward	28\n	standing	28\n	draft	28\n	brick	28\n	amendment	28\n	mouse	28\n	vegetable	28\n	sergeant	28\n	mystery	28\n	imagination	28\n	favour	28\n	bell	28\n	classroom	28\n	grade	28\n	announcement	28\n	headquarters	28\n	refugee	28\n	twin	27\n	composition	27\n	acceptance	27\n	limitation	27\n	pride	27\n	storm	27\n	discourse	27\n	participation	27\n	ceiling	27\n	weakness	27\n	architect	27\n	universe	27\n	detective	27\n	departure	27\n	cathedral	27\n	excitement	27\n	red	27\n	summit	27\n	transition	27\n	check	27\n	deficit	27\n	venture	27\n	constituency	27\n	register	27\n	assistant	27\n	joy	27\n	local	27\n	black	27\n	pit	27\n	belt	27\n	gesture	27\n	treasury	27\n	stick	26\n	concert	26\n	cap	26\n	mummy	26\n	expertise	26\n	canal	26\n	margin	26\n	psychology	26\n	leather	26\n	album	26\n	repair	26\n	uncertainty	26\n	chart	26\n	dust	26\n	tin	26\n	shelf	26\n	glance	26\n	passion	26\n	bench	26\n	pole	26\n	stand	26\n	consciousness	26\n	coin	26\n	ban	26\n	ward	26\n	opera	26\n	cow	26\n	coalition	26\n	trousers	26\n	constraint	26\n	objection	26\n	guideline	26\n	prosecution	26\n	assault	26\n	timber	26\n	virtue	26\n	clerk	26\n	folk	26\n	cattle	26\n	fellow	26\n	horror	26\n	paint	26\n	guardian	26\n	infant	26\n	button	26\n	reception	26\n	grammar	26\n	diary	26\n	flesh	25\n	lease	25\n	privilege	25\n	conservation	25\n	charter	25\n	publicity	25\n	specimen	25\n	format	25\n	nerve	25\n	completion	25\n	potato	25\n	craft	25\n	reflection	25\n	closure	25\n	punishment	25\n	agenda	25\n	chicken	25\n	portrait	25\n	printer	25\n	taxation	25\n	companion	25\n	evolution	25\n	carbon	25\n	traveller	25\n	patch	25\n	accounting	25\n	volunteer	25\n	jury	25\n	blue	25\n	ocean	25\n	pig	25\n	rabbit	25\n	pen	25\n	ideology	25\n	vat	25\n	van	25\n	kingdom	25\n	disorder	25\n	cold	25\n	good	25\n	alarm	25\n	funeral	25\n	rival	25\n	dividend	25\n	cousin	25\n	cable	25\n	mate	25\n	innovation	24\n	applicant	24\n	machinery	24\n	integration	24\n	planet	24\n	rat	24\n	exposure	24\n	pass	24\n	junction	24\n	terrace	24\n	earl	24\n	commander	24\n	slope	24\n	friendship	24\n	blow	24\n	lock	24\n	ally	24\n	stop	24\n	carriage	24\n	purchaser	24\n	resignation	24\n	conversion	24\n	chocolate	24\n	essay	24\n	sympathy	24\n	maker	24\n	discount	24\n	attraction	24\n	silk	24\n	seller	24\n	audit	24\n	vendor	24\n	garage	24\n	borough	24\n	petrol	24\n	emperor	24\n	disc	24\n	registration	24\n	strip	24\n	wonder	24\n	depression	24\n	destruction	24\n	commissioner	24\n	assurance	24\n	plot	24\n	organ	24\n	particle	24\n	favourite	24\n	remedy	24\n	conception	23\n	ambition	23\n	stimulus	23\n	grain	23\n	harm	23\n	pop	23\n	needle	23\n	logic	23\n	fibre	23\n	resort	23\n	darling	23\n	incentive	23\n	inspection	23\n	excuse	23\n	fate	23\n	disposal	23\n	declaration	23\n	allocation	23\n	dose	23\n	flame	23\n	pile	23\n	correspondent	23\n	identification	23\n	directive	23\n	shade	23\n	hypothesis	23\n	stranger	23\n	mortality	23\n	invitation	23\n	calculation	23\n	withdrawal	23\n	roll	23\n	mayor	23\n	chapel	23\n	mineral	23\n	youngster	23\n	trick	23\n	humour	23\n	rubbish	23\n	interface	23\n	federation	23\n	bike	23\n	collapse	23\n	cotton	23\n	crash	23\n	cry	23\n	suspicion	23\n	entertainment	23\n	voter	23\n	molecule	23\n	dictionary	22\n	complexity	22\n	fence	22\n	fragment	22\n	jew	22\n	constable	22\n	coverage	22\n	competitor	22\n	laughter	22\n	equity	22\n	clinic	22\n	kit	22\n	equivalent	22\n	daddy	22\n	interior	22\n	guarantee	22\n	cinema	22\n	isle	22\n	pond	22\n	accountant	22\n	insight	22\n	disability	22\n	era	22\n	lie	22\n	arrest	22\n	statute	22\n	advertisement	22\n	ceremony	22\n	tonne	22\n	farming	22\n	domain	22\n	removal	22\n	processor	22\n	taxi	22\n	explosion	22\n	leave	22\n	acre	22\n	tide	22\n	running	22\n	server	22\n	cm	22\n	cloth	22\n	satellite	22\n	rope	22\n	miner	22\n	angel	22\n	stability	22\n	publishing	22\n	lamp	22\n	illustration	21\n	gaze	21\n	anniversary	21\n	go	21\n	shortage	21\n	clothing	21\n	delight	21\n	monopoly	21\n	tory	21\n	worth	21\n	wound	21\n	tribunal	21\n	lion	21\n	allegation	21\n	merger	21\n	jurisdiction	21\n	controversy	21\n	desert	21\n	fat	21\n	insect	21\n	episode	21\n	christian	21\n	fleet	21\n	adjustment	21\n	colony	21\n	gear	21\n	minimum	21\n	raid	21\n	nursery	21\n	butter	21\n	celebration	21\n	piano	21\n	fiction	21\n	white	21\n	escape	21\n	specification	21\n	banking	21\n	bible	21\n	tournament	21\n	rhythm	21\n	therapy	21\n	brand	21\n	photo	21\n	emission	21\n	hardware	21\n	navy	21\n	effectiveness	21\n	temple	21\n	invasion	21\n	crystal	21\n	motive	21\n	transformation	21\n	fighting	21\n	villa	21\n	trustee	21\n	grip	21\n	toy	21\n	myth	21\n	battery	21\n	mess	21\n	necessity	21\n	switch	21\n	rebel	21\n	bulk	21\n	menu	20\n	warmth	20\n	adventure	20\n	gang	20\n	discrimination	20\n	skirt	20\n	toilet	20\n	graphics	20\n	lorry	20\n	chemistry	20\n	disadvantage	20\n	flag	20\n	proposition	20\n	singer	20\n	ghost	20\n	uniform	20\n	pope	20\n	gender	20\n	doctrine	20\n	compound	20\n	widow	20\n	restoration	20\n	clue	20\n	loyalty	20\n	cliff	20\n	landing	20\n	ride	20\n	shore	20\n	heating	20\n	colonel	20\n	rumour	20\n	chap	20\n	tragedy	20\n	leaflet	20\n	launch	20\n	dock	20\n	virus	20\n	harbour	20\n	ease	20\n	wildlife	20\n	rape	20\n	airline	20\n	testing	20\n	nail	20\n	heel	20\n	devil	20\n	outline	20\n	theft	20\n	flexibility	20\n	hierarchy	20\n	heritage	20\n	abbey	20\n	champagne	20\n	filter	20\n	successor	20\n	painter	20\n	attendance	20\n	receiver	20\n	mathematics	20\n	sociology	20\n	hint	20\n	fraction	20\n	spectrum	20\n	creditor	20\n	productivity	20\n	pensioner	20\n	mud	20\n	businessman	20\n	refusal	20\n	essence	20\n	indicator	20\n	verse	20\n	triumph	20\n	counter	20\n	apartment	19\n	probability	19\n	separation	19\n	capitalism	19\n	portfolio	19\n	juice	19\n	stroke	19\n	cupboard	19\n	seminar	19\n	developer	19\n	continent	19\n	availability	19\n	whisky	19\n	computing	19\n	trace	19\n	bastard	19\n	premium	19\n	forum	19\n	justification	19\n	kiss	19\n	lifetime	19\n	reporter	19\n	graduate	19\n	carrier	19\n	breeding	19\n	oak	19\n	palm	19\n	builder	19\n	discretion	19\n	oxygen	19\n	shame	19\n	classification	19\n	worry	19\n	fluid	19\n	duration	19\n	courage	19\n	suicide	19\n	missile	19\n	fool	19\n	analyst	19\n	delegate	19\n	avenue	19\n	succession	19\n	fraud	19\n	copper	19\n	density	19\n	receipt	19\n	merit	19\n	sensation	19\n	compromise	19\n	doorway	19\n	duck	19\n	shit	19\n	appendix	19\n	sword	19\n	liberty	19\n	aids	19\n	sculpture	19\n	midnight	19\n	pet	19\n	grave	19\n	shower	19\n	speculation	19\n	isolation	19\n	residence	19\n	fantasy	19\n	bureau	19\n	recipe	19\n	modification	19\n	stance	19\n	norm	19\n	installation	19\n	rod	19\n	heading	19\n	crack	19\n	truck	19\n	hip	19\n	polytechnic	19\n	physics	19\n	dialogue	19\n	diagnosis	19\n	laugh	19\n	accent	19\n	sin	19\n	musician	19\n	directory	19\n	offender	19\n	breed	19\n	sandwich	19\n	defender	19\n	killer	19\n	collector	19\n	envelope	19\n	subsidy	18\n	inn	18\n	ambulance	18\n	timing	18\n	pavement	18\n	tactic	18\n	ingredient	18\n	scholar	18\n	holding	18\n	reign	18\n	glory	18\n	finish	18\n	tray	18\n	thesis	18\n	delegation	18\n	autonomy	18\n	basket	18\n	bear	18\n	Ms	18\n	hunting	18\n	entity	18\n	consensus	18\n	horizon	18\n	jet	18\n	clash	18\n	pregnancy	18\n	organism	18\n	concession	18\n	wool	18\n	diagram	18\n	capability	18\n	riot	18\n	liberation	18\n	nest	18\n	tutor	18\n	trainer	18\n	pause	18\n	lung	18\n	instinct	18\n	teenager	18\n	trader	18\n	radiation	18\n	spell	18\n	sphere	18\n	swimming	18\n	eagle	18\n	plc	18\n	guilt	18\n	panic	18\n	tune	18\n	divorce	18\n	bean	18\n	bonus	18\n	coup	18\n	incidence	18\n	spread	18\n	subsidiary	18\n	nightmare	18\n	packet	18\n	scandal	18\n	easter	18\n	motivation	18\n	christianity	18\n	redundancy	18\n	assignment	18\n	auditor	18\n	commonwealth	18\n	mm	18\n	pity	18\n	correlation	18\n	photographer	17\n	brush	17\n	engagement	17\n	pint	17\n	translation	17\n	rider	17\n	gp	17\n	jaw	17\n	lighting	17\n	flavour	17\n	striker	17\n	casualty	17\n	intensity	17\n	remainder	17\n	constituent	17\n	liver	17\n	trap	17\n	parameter	17\n	limb	17\n	fighter	17\n	carer	17\n	contest	17\n	organiser	17\n	rating	17\n	disappointment	17\n	accuracy	17\n	regard	17\n	thief	17\n	counterpart	17\n	venue	17\n	rescue	17\n	supervision	17\n	boom	17\n	happiness	17\n	monster	17\n	beam	17\n	bush	17\n	walking	17\n	sensitivity	17\n	ideal	17\n	orchestra	17\n	diamond	17\n	hostility	17\n	pardon	17\n	tribute	17\n	relevance	17\n	questionnaire	17\n	kick	17\n	similarity	17\n	blanket	17\n	archbishop	17\n	terminal	17\n	matrix	17\n	hit	17\n	neighbourhood	17\n	republican	17\n	starting	17\n	execution	17\n	toe	17\n	cab	17\n	north-east	17\n	try	17\n	socialism	17\n	ridge	17\n	forecast	17\n	bronze	17\n	clay	17\n	monitoring	17\n	memorial	17\n	slave	17\n	deck	17\n	surgeon	17\n	frustration	17\n	maximum	17\n	stamp	17\n	faculty	17\n	equilibrium	17\n	legend	17\n	orange	17\n	geography	17\n	exploration	17\n	poster	17\n	ton	17\n	dismissal	17\n	blade	17\n	exclusion	17\n	chin	16\n	killing	16\n	horn	16\n	owl	16\n	debut	16\n	terror	16\n	current	16\n	medal	16\n	echo	16\n	nonsense	16\n	pursuit	16\n	reservation	16\n	yield	16\n	dear	16\n	plain	16\n	sauce	16\n	dining	16\n	giant	16\n	bloke	16\n	elite	16\n	chaos	16\n	inhabitant	16\n	criminal	16\n	handle	16\n	dot	16\n	sterling	16\n	fly	16\n	arrow	16\n	collar	16\n	sleeve	16\n	mention	16\n	competence	16\n	respondent	16\n	reach	16\n	coffin	16\n	biscuit	16\n	keeper	16\n	elbow	16\n	predecessor	16\n	supermarket	16\n	breakdown	16\n	grace	16\n	transmission	16\n	sanction	16\n	cave	16\n	affection	16\n	hut	16\n	virgin	16\n	commerce	16\n	stitch	16\n	broadcasting	16\n	tumour	16\n	verdict	16\n	dolphin	16\n	miracle	16\n	russian	16\n	atom	16\n	mix	16\n	tap	16\n	pie	16\n	evil	16\n	script	16\n	drawer	16\n	trophy	16\n	economist	16\n	fist	16\n	contractor	16\n	workforce	16\n	cooking	16\n	classic	16\n	recruitment	16\n	lamb	16\n	candle	16\n	shield	16\n	supper	16\n	brass	16\n	flood	16\n	grandfather	16\n	rice	16\n	container	16\n	founder	16\n	saint	16\n	adoption	16\n	correspondence	16\n	ruler	16\n	greek	16\n	hedge	16\n	undertaking	16\n	barn	16\n	exam	16\n	stretch	16\n	utility	16\n	lap	16\n	rally	16\n	scot	16\n	prey	16\n	shelter	16\n	fitness	16\n	oven	16\n	electron	16\n	tent	16\n	prejudice	16\n	prediction	16\n	comedy	16\n	ac	16\n	ladder	16\n	antibody	16\n	submission	16\n	helicopter	16\n	marble	16\n	ph	16\n	washing	16\n	equality	16\n	cutting	16\n	drum	16\n	workstation	16\n	tile	15\n	referendum	15\n	mask	15\n	roman	15\n	circulation	15\n	thigh	15\n	nut	15\n	embassy	15\n	draw	15\n	vein	15\n	terrorist	15\n	prevention	15\n	suite	15\n	portion	15\n	**base/basis	15\n	hazard	15\n	suspension	15\n	signature	15\n	petition	15\n	european	15\n	liquid	15\n	st	15\n	alteration	15\n	defect	15\n	certainty	15\n	pump	15\n	odds	15\n	desktop	15\n	charm	15\n	wisdom	15\n	bureaucracy	15\n	handling	15\n	grandmother	15\n	vol	15\n	log	15\n	lounge	15\n	pan	15\n	segment	15\n	moor	15\n	seal	15\n	abortion	15\n	commodity	15\n	beef	15\n	distress	15\n	wrist	15\n	disturbance	15\n	ad	15\n	regiment	15\n	runner	15\n	plea	15\n	encouragement	15\n	hook	15\n	lump	15\n	destination	15\n	pulse	15\n	goodness	15\n	tobacco	15\n	italian	15\n	catholic	15\n	custody	15\n	km	15\n	extract	15\n	composer	15\n	drinking	15\n	voting	15\n	supplement	15\n	rejection	15\n	basin	15\n	encounter	15\n	soap	15\n	imprisonment	15\n	integrity	15\n	magic	15\n	contradiction	15\n	swing	15\n	tomato	15\n	electronics	15\n	handful	15\n	gen	15\n	straw	15\n	slide	15\n	banker	15\n	administrator	15\n	ankle	15\n	manual	15\n	dawn	15\n	restraint	15\n	penny	15\n	ulcer	15\n	soup	15\n	quid	15\n	handicap	15\n	cluster	15\n	trail	15\n	mining	15\n	ballet	15\n	expedition	15\n	mobility	15\n	elephant	15\n	auction	15\n	academy	15\n	waist	15\n	manor	15\n	conscience	15\n	powder	15\n	spine	15\n	bowel	15\n	inequality	15\n	parking	15\n	slice	15\n	remains	15\n	can	15\n	takeover	15\n	tourism	15\n	fortnight	15\n	corruption	15\n	squadron	15\n	single	15\n	grief	15\n	loch	15\n	breeze	15\n	maturity	15\n	strand	14\n	valuation	14\n	referee	14\n	ritual	14\n	faction	14\n	fare	14\n	stall	14\n	well	14\n	interference	14\n	salad	14\n	rush	14\n	diesel	14\n	barrel	14\n	treasure	14\n	revelation	14\n	yacht	14\n	taxpayer	14\n	making	14\n	migration	14\n	fossil	14\n	statue	14\n	suffering	14\n	ferry	14\n	booking	14\n	lecturer	14\n	motorway	14\n	dancer	14\n	habitat	14\n	joint	14\n	&pound;1	14\n	pencil	14\n	discharge	14\n	graph	14\n	rug	14\n	inspiration	14\n	highway	14\n	diversity	14\n	decision-making	14\n	sexuality	14\n	lawn	14\n	pin	14\n	thumb	14\n	quota	14\n	obstacle	14\n	dioxide	14\n	headline	14\n	ambassador	14\n	glove	14\n	parallel	14\n	beat	14\n	collaboration	14\n	bacterium	14\n	bucket	14\n	outlet	14\n	protocol	14\n	psychologist	14\n	manufacture	14\n	meantime	14\n	stem	14\n	tyre	14\n	librarian	14\n	substitute	14\n	covenant	14\n	dilemma	14\n	injection	14\n	canvas	14\n	girlfriend	14\n	verb	14\n	bunch	14\n	kilometre	14\n	bias	14\n	layout	14\n	forehead	14\n	warehouse	14\n	dealing	14\n	ranger	14\n	march	14\n	skull	14\n	bow	14\n	manuscript	14\n	continuity	14\n	embarrassment	14\n	it	14\n	decoration	14\n	cd	14\n	frontier	14\n	eyebrow	14\n	revision	14\n	retailer	14\n	timetable	14\n	diameter	14\n	lid	14\n	validity	14\n	lifestyle	14\n	driving	14\n	occurrence	14\n	tribe	14\n	worship	14\n	clergy	14\n	beast	14\n	dwelling	14\n	commentator	14\n	shed	14\n	wicket	14\n	heir	14\n	lemon	14\n	excess	14\n	popularity	14\n	monument	13\n	inside	13\n	viewer	13\n	indian	13\n	behalf	13\n	steward	13\n	make-up	13\n	enforcement	13\n	temper	13\n	offering	13\n	gospel	13\n	double	13\n	donation	13\n	whale	13\n	10%	13\n	harmony	13\n	privatisation	13\n	predator	13\n	cage	13\n	appreciation	13\n	gardener	13\n	telecommunication	13\n	sufferer	13\n	counselling	13\n	configuration	13\n	contrary	13\n	patent	13\n	archive	13\n	misery	13\n	fox	13\n	learner	13\n	ash	13\n	pence	13\n	caution	13\n	probe	13\n	brochure	13\n	serum	13\n	peer	13\n	tiger	13\n	soccer	13\n	despair	13\n	borrowing	13\n	stay	13\n	lordship	13\n	outsider	13\n	dignity	13\n	&pound;100	13\n	woodland	13\n	calendar	13\n	loop	13\n	realm	13\n	invention	13\n	sunshine	13\n	senate	13\n	usage	13\n	width	13\n	boyfriend	13\n	nursing	13\n	node	13\n	vitamin	13\n	exploitation	13\n	utterance	13\n	actress	13\n	syndrome	13\n	compliance	13\n	communist	13\n	caravan	13\n	feedback	13\n	intent	13\n	jeans	13\n	reproduction	13\n	salmon	13\n	activist	13\n	grid	13\n	praise	13\n	mist	13\n	gravel	13\n	garment	13\n	exemption	13\n	towel	13\n	cabin	13\n	rage	13\n	sink	13\n	textile	13\n	south-east	13\n	fitting	13\n	ozone	13\n	printing	13\n	lace	13\n	reactor	13\n	dependence	13\n	ft	13\n	trainee	13\n	deed	13\n	contempt	13\n	vocabulary	13\n	membrane	13\n	shooting	13\n	arch	13\n	negligence	13\n	erosion	13\n	ruling	13\n	promoter	13\n	down	13\n	lab	13\n	mistress	13\n	surplus	13\n	tablet	13\n	throne	13\n	brigade	13\n	ace	13\n	quarry	13\n	aspiration	13\n	inheritance	13\n	laser	13\n	aggression	13\n	feather	13\n	eating	13\n	testament	13\n	relaxation	13\n	bullet	13\n	guerrilla	13\n	shaft	13\n	array	13\n	jewellery	13\n	attribute	13\n	dragon	13\n	sunlight	13\n	cylinder	13\n	motif	13\n	reminder	13\n	tel	13\n	calcium	13\n	monk	13\n	ancestor	13\n	bat	13\n	temptation	13\n	morality	13\n	philosopher	13\n	illusion	13\n	fringe	13\n	bee	13\n	headmaster	13\n	foreigner	12\n	knot	12\n	revival	12\n	surroundings	12\n	marker	12\n	cooperation	12\n	emergence	12\n	thread	12\n	wit	12\n	sponsorship	12\n	bolt	12\n	major	12\n	herb	12\n	intake	12\n	min	12\n	worm	12\n	follower	12\n	scrutiny	12\n	controller	12\n	selling	12\n	booklet	12\n	parcel	12\n	outlook	12\n	tariff	12\n	referral	12\n	debtor	12\n	humanity	12\n	chemist	12\n	broadcast	12\n	knight	12\n	exile	12\n	confrontation	12\n	sickness	12\n	onion	12\n	narrative	12\n	bargaining	12\n	choir	12\n	synthesis	12\n	metaphor	12\n	enzyme	12\n	gravity	12\n	suspect	12\n	spectacle	12\n	fusion	12\n	sock	12\n	recorder	12\n	congregation	12\n	mount	12\n	legacy	12\n	disclosure	12\n	crossing	12\n	accountability	12\n	wake	12\n	bile	12\n	fertility	12\n	corn	12\n	inclusion	12\n	sovereignty	12\n	bargain	12\n	backing	12\n	hydrogen	12\n	mammal	12\n	queue	12\n	cart	12\n	apology	12\n	curiosity	12\n	mosaic	12\n	documentation	12\n	gathering	12\n	smoking	12\n	boxing	12\n	snake	12\n	planner	12\n	complication	12\n	fame	12\n	orientation	12\n	sponsor	12\n	patience	12\n	slip	12\n	cleaning	12\n	bride	12\n	texture	12\n	reconstruction	12\n	patron	12\n	likelihood	12\n	jail	12\n	mps	12\n	corpse	12\n	dancing	12\n	grin	12\n	precision	12\n	telegraph	12\n	brow	12\n	ch	12\n	goat	12\n	census	12\n	willingness	12\n	outbreak	12\n	pine	12\n	mechanic	12\n	fur	12\n	spectator	12\n	confirmation	12\n	sigh	12\n	locomotive	12\n	sack	12\n	appraisal	12\n	bull	12\n	halt	12\n	associate	12\n	grouping	12\n	cleaner	12\n	presidency	12\n	precedent	12\n	sketch	12\n	maid	12\n	intellectual	12\n	wolf	12\n	sail	12\n	torch	12\n	pill	12\n	principal	12\n	parade	12\n	feminist	12\n	corps	12\n	costume	12\n	pact	12\n	provider	12\n	yarn	12\n	sofa	12\n	sailor	12\n	surveyor	12\n	disagreement	12\n	rear	12\n	mercy	12\n	valve	12\n	headache	12\n	polymer	12\n	viewpoint	12\n	hammer	12\n	doll	12\n	abolition	12\n	conspiracy	12\n	Vice-President	12\n	genius	12\n	rib	12\n	exit	12\n	accusation	12\n	baron	12\n	propaganda	12\n	reporting	12\n	sweat	12\n	solo	12\n	theology	12\n	fury	12\n	threshold	12\n	trunk	12\n	murderer	12\n	spur	12\n	fever	11\n	flash	11\n	opposite	11\n	subscription	11\n	impulse	11\n	recipient	11\n	bicycle	11\n	locality	11\n	amnesty	11\n	keyboard	11\n	ignorance	11\n	quotation	11\n	stool	11\n	unionist	11\n	ml	11\n	adaptation	11\n	renaissance	11\n	balcony	11\n	suburb	11\n	butterfly	11\n	repayment	11\n	glimpse	11\n	pillow	11\n	scent	11\n	pad	11\n	electorate	11\n	salvation	11\n	landowner	11\n	patrol	11\n	wardrobe	11\n	photography	11\n	hostage	11\n	prosperity	11\n	pylorus	11\n	sacrifice	11\n	placement	11\n	pepper	11\n	hunger	11\n	ballot	11\n	assertion	11\n	rev	11\n	&pound;10	11\n	warrior	11\n	preservation	11\n	solidarity	11\n	alpha	11\n	outfit	11\n	luxury	11\n	cast	11\n	punch	11\n	apparatus	11\n	listener	11\n	courtesy	11\n	scholarship	11\n	deadline	11\n	inability	11\n	majesty	11\n	query	11\n	close	11\n	50%	11\n	dominance	11\n	supervisor	11\n	survivor	11\n	analogy	11\n	pier	11\n	dressing	11\n	lobby	11\n	bomber	11\n	ending	11\n	formulation	11\n	sentiment	11\n	romance	11\n	hp	11\n	descent	11\n	performer	11\n	cure	11\n	englishman	11\n	pudding	11\n	folly	11\n	lodge	11\n	hunt	11\n	racism	11\n	decree	11\n	bankruptcy	11\n	reservoir	11\n	monkey	11\n	mainframe	11\n	cassette	11\n	liberal	11\n	fisherman	11\n	harvest	11\n	clarity	11\n	sediment	11\n	liaison	11\n	honey	11\n	resentment	11\n	projection	11\n	chorus	11\n	passport	11\n	staircase	11\n	investigator	11\n	immigration	11\n	retreat	11\n	notebook	11\n	broker	11\n	ruin	11\n	renewal	11\n	bombing	11\n	calf	11\n	biology	11\n	bin	11\n	express	11\n	privacy	11\n	greenhouse	11\n	deficiency	11\n	brake	11\n	warrant	11\n	revenge	11\n	rebellion	11\n	jungle	11\n	memorandum	11\n	hatred	11\n	insider	11\n	superintendent	11\n	pony	11\n	ambiguity	11\n	methodology	11\n	monitor	11\n	madame	11\n	proceed	11\n	20%	11\n	fit	11\n	appetite	11\n	nuisance	11\n	donor	11\n	flour	11\n	programming	11\n	welcome	11\n	triangle	11\n	catch	11\n	bladder	11\n	daylight	11\n	variant	11\n	mucosa	11\n	drill	11\n	flock	11\n	rifle	11\n	newcomer	11\n	japanese	11\n	amusement	11\n	copyright	11\n	repetition	11\n	mainland	11\n	burial	11\n	fog	11\n	cult	11\n	refuge	11\n	fridge	11\n	bearing	11\n	boost	10\n	default	10\n	mug	10\n	ego	10\n	enjoyment	10\n	wartime	10\n	velocity	10\n	fork	10\n	aluminium	10\n	prescription	10\n	jar	10\n	agony	10\n	axis	10\n	rainbow	10\n	bowler	10\n	reluctance	10\n	gall	10\n	jazz	10\n	soviet	10\n	vegetation	10\n	knitting	10\n	hemisphere	10\n	commentary	10\n	balloon	10\n	bracket	10\n	toast	10\n	enthusiast	10\n	para	10\n	bass	10\n	heap	10\n	monarchy	10\n	injunction	10\n	spider	10\n	gown	10\n	lieutenant	10\n	extreme	10\n	bulb	10\n	residue	10\n	jam	10\n	waiting	10\n	fine	10\n	hire	10\n	nationalism	10\n	semi-final	10\n	irony	10\n	asylum	10\n	poison	10\n	guild	10\n	infrastructure	10\n	biography	10\n	pillar	10\n	chord	10\n	nationalist	10\n	cargo	10\n	dairy	10\n	shilling	10\n	north-west	10\n	ram	10\n	herd	10\n	t-shirt	10\n	magnitude	10\n	rehearsal	10\n	coral	10\n	primary	10\n	stadium	10\n	reasoning	10\n	brewery	10\n	lb	10\n	nationality	10\n	mould	10\n	blast	10\n	ed	10\n	scrap	10\n	adjective	10\n	elder	10\n	contemporary	10\n	waiter	10\n	listing	10\n	dirt	10\n	housewife	10\n	fax	10\n	ribbon	10\n	&pound;1,000	10\n	ant	10\n	colitis	10\n	wheat	10\n	spelling	10\n	holly	10\n	monarch	10\n	voltage	10\n	morale	10",
+			"settings":
+			{
+				"buffer_size": 48839,
+				"line_ending": "Unix",
+				"name": "other	1336"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/stevet/unity-legos/Assets/unity-legos/LegoUtils.boo",
+			"settings":
+			{
+				"buffer_size": 1084,
+				"line_ending": "Unix",
+				"name": "using UnityEngine"
+			}
+		},
+		{
+			"file": "Intro.md",
+			"settings":
+			{
+				"buffer_size": 6667,
 				"line_ending": "Unix"
 			}
 		}
@@ -23,10 +226,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "instal",
+		"height": 392.0,
+		"last_filter": "pac",
 		"selected_items":
 		[
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: m",
+				"Snippet: Markdown_link_(mdl)"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -36,7 +255,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 691.0
 	},
 	"console":
 	{
@@ -57,16 +276,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/stevet/Documents/tasg"
+		"/Users/stevet/Documents/tasg",
+		"/Users/stevet/Documents/tasg/notes"
 	],
 	"file_history":
 	[
-		"/Users/stevet/Documents/tasg/@- Does this show up in taasg.md",
+		"/Users/stevet/PycharmProjects/spelchek/spelchek.py",
+		"/Users/stevet/Desktop/spelchek.py",
+		"/Users/stevet/unity-legos/Assets/unity-legos/JumpingMovementController.boo",
 		"/Users/stevet/Documents/tasg/TAD WTF.md",
+		"/Users/stevet/Documents/tasg/tasg.sublime-project",
+		"/Users/stevet/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/stevet/Documents/tasg/@- outline.txt",
+		"/Users/stevet/Documents/tasg/outline.md",
+		"/Users/stevet/Dropbox/publication/New Stack/So, What makes a TA.md",
+		"/Users/stevet/Dropbox/publication/New Stack/-Enough to be dangerous-, or- So, you want to be a TA.md",
+		"/Users/stevet/Documents/tasg/Intro.md",
+		"/Users/stevet/Documents/tasg/Intro.html",
+		"/Users/stevet/Documents/tasg/@Intro.md",
+		"/Users/stevet/Documents/tasg/@- Does this show up in taasg.md",
 		"/Users/stevet/Documents/tasg/So, What makes a TA.md",
 		"/Users/stevet/Documents/tasg/preface.md",
 		"/Users/stevet/Documents/tasg/outline.txt.bak",
-		"/Users/stevet/Documents/tasg/outline.md",
 		"/Users/stevet/Documents/tasg/@ta taxonomy.md",
 		"/Users/stevet/Documents/tasg/personal productivity.md",
 		"/Users/stevet/Documents/tasg/survival skills bullet.txt.bak",
@@ -80,19 +311,19 @@
 		"/Users/stevet/Dropbox/blog/tadwtd.md",
 		"/Users/stevet/Dropbox/blog/tadwtd.html",
 		"/Users/stevet/Dropbox/blog/book_review",
-		"/Users/stevet/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/stevet/Desktop/undeadlabs.ovpn",
 		"/Users/stevet/Desktop/delete.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -100,6 +331,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Searching",
+			"theatre",
+			"centre",
+			"center",
+			"centre",
+			"colour",
+			"color",
+			"tga",
+			"may",
+			"asset",
+			"y': 4",
+			"ed': 4",
+			"ing': 4",
+			"\\n\\n",
+			",",
+			"`",
+			"(\\w*)",
+			".*'.*\\n",
+			".*'.*.*",
+			".*'.*",
+			"'",
+			"jot"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -107,26 +360,37 @@
 		"regex": false,
 		"replace_history":
 		[
+			"color",
+			"y': 3",
+			"ed': 3",
+			"ing': 3",
+			"\\n",
+			"n",
+			": 4,\\n",
+			"'",
+			"'$1`,",
+			"",
+			"\""
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": true
+		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "@ Effect Fundamentals.md",
-					"semi_transient": true,
+					"file": "TA taxonomy.md",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 823,
+						"buffer_size": 1638,
 						"regions":
 						{
 						},
@@ -139,6 +403,7 @@
 						],
 						"settings":
 						{
+							"WordCountSyntax": "markdown",
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -146,7 +411,248 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/stevet/unity-legos/Assets/unity-legos/NoCollide.boo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2604,
+								2604
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/Boo/Boo.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 208.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								715
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/stevet/Dropbox/blog/Spelchek.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1903,
+								1903
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "Spelchek",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/stevet/Dropbox/blog/Spelchek.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4686
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								813,
+								813
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "other	1336",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/stevet/unity-legos/Assets/unity-legos/LegoUtils.boo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "using UnityEngine",
+							"syntax": "Packages/Boo/Boo.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Intro.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6667,
+								6667
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -154,7 +660,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -195,7 +701,7 @@
 	"project": "tasg.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -209,12 +715,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
